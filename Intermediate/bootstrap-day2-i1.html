@@ -108,8 +108,9 @@
     </div>
     <script>
         $(document).ready(function(){
+
             for (let i = 0; i < 4; i++) {
-                $(`.nav-link:eq(${i})`).click(function() {
+                $(".nav-link:eq(" + i + ")").click(function() {
                     $('html, body').animate({
                         scrollTop: $(`.textContent:eq(${i})`).offset().top
                     }, 800);
